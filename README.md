@@ -1,43 +1,40 @@
 # <img src="frontend/src/assets/pic.png" width="40" height="40" style="vertical-align: middle; margin-right: 10px;" /> OrbitWorks - Enterprise Management System
 
-OrbitWorks is a comprehensive, role-based Employee Portal and Coordination System built on the **MERN (MongoDB, Express, React, Node.js)** stack. It integrates attendance registers, task delegation boards, automated onboarding checklists, recruitment trackers, financial simulators, and dynamic reporting tools into a single responsive dashboard.
+OrbitWorks is a comprehensive, role-based Employee Portal and Coordination System built on the MERN (MongoDB, Express, React, Node.js) stack.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-### 🔑 Role-Based Access Control (RBAC)
-The system adapts its interface dynamically depending on the authenticated user's role:
-*   **CEO & Founder Panel**: Access to overall company analytics, department budgeting, cost simulation, project logs, and productivity leaderboards.
-*   **HR & Admin Panel**: Manage employee records, log manual attendance, approve/deny leave requests, organize onboarding checklists, and track applicants in the recruitment pipeline.
-*   **Employee Portal**: View assigned tasks, register daily check-ins/check-outs, submit leaves, log daily progress, view wellness metrics, and download digital ID badges.
-
-### 📅 QR-Code Entrance Gate Scanner
-*   **Digital Badges**: Employees can generate and download a unique QR-code ID badge containing their encrypted Employee ID.
-*   **Gate Scanner**: HR can scan badges using a browser camera link or by uploading badge image files to instantly check employees in/out.
-
-### 📊 CEO Insights & Budget Simulator
-*   **Financial Runway**: Simulate hire/fire scenarios, adjust operational budgets, and track monthly burn rate and runway stats.
-*   **Productivity Metrics**: Tracks average days taken to complete tasks and rates team productivity.
-
-### 📝 Document & Report Exports
-*   **Excel/CSV Exports**: Instantly download compliance and performance data logs in spreadsheet formats.
-*   **PDF Exporter**: Print styled corporate summary reports directly from the CEO dashboard.
+* **Role-Based Access Control**: Tailored dashboards and permissions for CEO, HR, and standard Employee accounts.
+* **Digital ID Badges**: Generates personal employee identification badges with downloadable QR-code images.
+* **Gate Attendance Scanner**: Real-time barcode/QR reader utilizing camera inputs and image file uploads.
+* **Centralized Chat Suite**: Real-time communication portal for employees.
+* **Task Kanban Board**: Set priorities, assign tasks, write comments, and track sprint deadlines.
+* **Daily Work Logs**: Simple submission register for employees to log daily task progress updates.
+* **Attendance Management**: Logs check-in/out times, tracking Present, WFH, and Late Entry stats.
+* **Leave Pipeline**: System for submitting leave requests and allowing HR to approve or deny them.
+* **Holiday Calendar**: Lists annual corporate holidays and calculates countdowns to upcoming events.
+* **Announcement Board**: Broadcasts company notices and general policy updates.
+* **CEO Insights**: Analyzes employee task workloads and identifies burnout risks using wellness scores.
+* **Budget Simulator**: Models cost changes, salary calculations, and company funding runway.
+* **Document Vault**: Manages uploaded employee personal files and validation proofs securely.
+* **Reports Exporter**: Generates styled PDF files and downloadable Excel/CSV spreadsheets for corporate reports.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-*   **Frontend**: React.js, Recharts (Data Visualizations), HTML5-QRCode (Computer Vision scanning), Lucide React (Icons), Context API.
-*   **Backend**: Node.js, Express.js, JWT (JSON Web Tokens) Authentication, Bcryptjs (Password encryption), Nodemailer (Email notifications).
-*   **Database**: MongoDB (Atlas cloud database).
+* **Frontend**: React.js, Recharts, HTML5-QRCode, Lucide React, Context API.
+* **Backend**: Node.js, Express.js, JWT (JSON Web Tokens), Bcryptjs, Nodemailer.
+* **Database**: MongoDB (Atlas).
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation and Setup
 
 ### 1. Prerequisites
-Ensure you have [Node.js](https://nodejs.org/) and a [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account ready.
+Ensure you have Node.js and a MongoDB Atlas account ready.
 
 ### 2. Backend Setup
 1. Navigate to the backend directory:
@@ -59,7 +56,7 @@ Ensure you have [Node.js](https://nodejs.org/) and a [MongoDB Atlas](https://www
    SMTP_PASS=your_smtp_password
    ADMIN_EMAIL=ceo@orbitworks.com
    ```
-4. **Seed the Database** (Sets up default CEO, HR, and Employee accounts with secure default passwords):
+4. Seed the Database:
    ```bash
    node scripts/seed.js
    ```
@@ -81,11 +78,11 @@ Ensure you have [Node.js](https://nodejs.org/) and a [MongoDB Atlas](https://www
    ```bash
    npm start
    ```
-4. Open `http://localhost:3000` in your web browser.
+4. Open http://localhost:3000 in your web browser.
 
 ---
 
-## 🔒 Security Practices
-*   Passwords are never stored in plain text. They are hashed using **bcryptjs** (work factor 10).
-*   API endpoints are protected with **JSON Web Token (JWT)** auth headers.
-*   All environment secrets (`.env`) are listed in `.gitignore` to prevent leakage.
+## Security Practices
+* Passwords are hashed using bcryptjs (work factor 10).
+* API endpoints are protected with JSON Web Token (JWT) headers.
+* All environment secrets (.env) are listed in .gitignore to prevent leakage.
