@@ -1,7 +1,7 @@
 # <img src="frontend/src/assets/pic.png" width="40" height="40" style="vertical-align: middle; margin-right: 10px;" /> OrbitWorks - Enterprise Management System
 
-OrbitWorks is a comprehensive, role-based Employee Portal and Coordination System built on the MERN (MongoDB, Express, React, Node.js) stack.
-https://orbitwork-orcin.vercel.app/
+OrbitWorks is a comprehensive, role-based Employee Portal and Coordination System built on the MERN (MongoDB, Express, React, Node.js) stack. This is implemented during a group project during the MERN Internship in [Algo Orbit Innovations](https://www.algoorbit.in/)
+## official Link: https://orbitwork-orcin.vercel.app/
 ---
 
 ## Key Features
